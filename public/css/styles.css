@@ -1,0 +1,141 @@
+
+/*  Global Selectors
+---------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.content_wrapper {
+  max-width: 950px;
+  padding: 50px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.about h1, h3 {
+  margin-bottom: 0;
+}
+.about h2, p {
+  margin-top: 0;
+}
+
+/*  HEADER and FOOTER
+_______________________________________________*/
+
+header, footer {
+  background: linear-gradient(rgb(112,128,144), rgb(255,218,185));
+}
+
+header {
+  position: relative;
+}
+blockquote {
+  position: relative;
+  right: 40px;
+}
+/*  header   */
+
+/*  footer   */
+footer {
+  text-align: center;
+}
+
+.links a {
+  padding: 10px;
+
+}
+.image {
+  border-radius: 50%;
+}
+#image_about {
+  padding: 150px 100px 100px 100px;
+}
+.about {
+  padding-left: 50px;
+
+}
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+nav a {
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#msg {
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+
+}
+
+/* Projects
+________________________________________________*/
+#projects {
+
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+              url(../images/beach.jpg) no-repeat fixed;
+  background-size: cover;
+            }
+#projects ul {
+}
+#edu_work_skills {
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5));
+}
+.download {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rgb(255,250,250);
+  padding: 10px;
+}
+
+@media (min-width: 900px) {
+  .small_col {
+    width: 40%;
+    float: left;
+    left: 80px;
+  }
+  .big_col {
+    width: 60%;
+    float: left;
+  }
+  .big_col2 {
+    width: 40%;
+    float: left;
+    position: relative;
+  }
+  .small_col2 {
+    width: 60%;
+    float: left;
+    position: relative;
+    left: 100px;
+  }
+}
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .image {
+    width: 200px;
+  }
+  nav a {
+  text-transform: lowercase;
+  font-weight: 400;
+  }
+
+}
